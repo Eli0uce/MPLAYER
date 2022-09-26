@@ -45,12 +45,12 @@
         
     function onLecture() {
         
-        if(playButton.src == "./img/play.png"){
+        if(playButton.src == "eli0uce.github.io/MPLAYER/img/play.png"){
             player.play();
-            playButton.src = "./img/pause.png";
-        } else if (playButton.src == "./img/pause.png") {
+            playButton.src = "eli0uce.github.io/MPLAYER/img/pause.png";
+        } else if (playButton.src == "eli0uce.github.io/MPLAYER/img/pause.png") {
             player.pause();
-            playButton.src = "./img/play.png";
+            playButton.src = "eli0uce.github.io/MPLAYER/img/play.png";
         }
     }
 
