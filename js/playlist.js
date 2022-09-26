@@ -27,28 +27,4 @@ var playlist = [
         "album": "Mad Love The Prequel",
         "source": "./music/NoLie.mp3",
     },
-    /*{
-        "img": "./img/NoLie.jpg",
-        "title": "No Lie",
-        "author": "Sean Paul ft. Dua Lipa",
-        "source": "./music/NoLie.mp3",
-    },
-    {
-        "img": "./img/NoLie.jpg",
-        "title": "No Lie",
-        "author": "Sean Paul ft. Dua Lipa",
-        "source": "./music/NoLie.mp3",
-    },
-    {
-        "img": "./img/NoLie.jpg",
-        "title": "No Lie",
-        "author": "Sean Paul ft. Dua Lipa",
-        "source": "./music/NoLie.mp3",
-    },
-    {
-        "img": "./img/NoLie.jpg",
-        "title": "No Lie",
-        "author": "Sean Paul ft. Dua Lipa",
-        "source": "./music/NoLie.mp3",
-    },*/
 ];
