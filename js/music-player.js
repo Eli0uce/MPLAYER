@@ -45,12 +45,12 @@
         
     function onLecture() {
         
-        if(playButton.src == "./img/play.png"){
+        if(playButton.src == "img/play.png"){
             player.play();
-            playButton.src = "./img/pause.png";
-        } else if (playButton.src == "./img/pause.png") {
+            playButton.src = "img/pause.png";
+        } else if (playButton.src == "img/pause.png") {
             player.pause();
-            playButton.src = "./img/play.png";
+            playButton.src = "img/play.png";
         }
     }
 
@@ -58,12 +58,12 @@
 
     function onLike() {
         
-        if(nolikeButton.src == "./img/no-like.png"){
+        if(nolikeButton.src == "img/no-like.png"){
             //player.play();
-            nolikeButton.src = "./img/like.png";
-        } else if (nolikeButton.src == "./img/like.png") {
+            nolikeButton.src = "img/like.png";
+        } else if (nolikeButton.src == "img/like.png") {
             //player.pause();
-            nolikeButton.src = "./img/no-like.png";
+            nolikeButton.src = "img/no-like.png";
         }
     }
 
@@ -86,7 +86,7 @@
         album.innerText = song.album;
 
         player.play();
-        playButton.src = "./img/pause.png";
+        playButton.src = "img/pause.png";
     }
 
     function onNext() {
@@ -107,7 +107,7 @@
         album.innerText = song.album;
 
         player.play();
-        playButton.src = "./img/pause.png";
+        playButton.src = "img/pause.png";
     }
 
     function onPosition(value) {
