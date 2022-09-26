@@ -1,0 +1,266 @@
+@import url('https://fonts.googleapis.com/css2?family=Share+Tech&display=swap');
+
+/*@media (max-width: 1920px) {
+    .rwd body {
+        width: auto;
+    }
+}*/
+
+html {
+    margin-top: 100px;
+    
+    font: 23px Arial, Helvetica, sans-serif;
+    font-family: 'Share Tech', sans-serif; 
+    background-color: rgb(42, 42, 42);
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+    line-height : 15px;
+}
+
+a:link {
+    color: white;
+    text-decoration: none;
+}
+a:visited {
+    color: white;
+    text-decoration: none;
+}
+a:hover {
+    color: white;
+    text-decoration: none;
+}
+a:active{
+    color: white;
+    text-decoration: none;
+}
+
+ul {
+    list-style-type: none;
+}
+
+#header {
+    text-align: center;
+    font: 23px Arial, Helvetica, sans-serif;
+    font-family: 'Share Tech', sans-serif;
+    color: rgb(255, 255, 255);
+    text-transform: none;
+    margin-top: -75px;
+}
+
+#music-player {
+    margin-top: 1.5em;
+    margin-left: 11.1em;
+}
+
+#music-text {
+    cursor: default;
+    margin-top: -13em;
+    margin-left: 14em;
+}
+
+#separation {
+    margin-left: -0.3em;
+    margin-right: -0.3em;
+}
+
+#logo {
+    position: absolute;
+    left: 20px;
+    top: 20px;
+    width: 200px;
+}
+
+#img {
+    width: 300px;
+    box-shadow: 7px 7px 5px rgb(20, 20, 20);
+}
+
+#author {
+    margin-top: -10px;
+    font: 25px Arial, Helvetica, sans-serif;
+    font-family: 'Share Tech', sans-serif;
+}
+
+#album {
+    margin-top: -18px;
+    font: 13px Arial, Helvetica, sans-serif;
+    font-family: 'Share Tech', sans-serif;
+}
+
+.buttons {
+    margin-left: 13.6em;
+    margin-top: 2.5em;
+}
+
+.menu-button {
+    margin-left: -0.4em;
+    cursor: pointer;
+    font: 16px Arial, Helvetica, sans-serif;
+    font-family: 'Share Tech', sans-serif;
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+    background-color: rgb(21, 21, 21);
+    border: none;
+}
+
+.button {
+    padding-right: 40px;
+    text-align: center;
+    margin: 3.2px;
+    border: none;
+    background-color: rgb(42, 42, 42);
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+
+#pause-button {
+    visibility: collapse;
+}
+
+#like {
+    visibility: collapse;
+}
+
+.duration{
+    margin-top: 0.7em;
+    margin-left: -35em;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    }
+
+#currentTime {
+    font: 15px Arial, Helvetica, sans-serif;
+    position: relative;
+    top: 2px;
+    right: -40px;
+}
+
+#durationTime {
+    font: 15px Arial, Helvetica, sans-serif;
+    position: relative;
+    top: 2px;
+    right: 40px;
+}
+
+#volume {
+    padding-top: -10em;
+    margin-left: 24.1em;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+    input[type='range'] {
+      overflow: hidden;
+      width: 200px;
+      -webkit-appearance: none;
+      background-color: #7e7e7e;
+    }
+    
+    input[type='range']::-webkit-slider-runnable-track {
+      height: 10px;
+      width: 250px;
+      -webkit-appearance: none;
+      color: orange;
+      margin-top: -1px;
+    }
+    
+    input[type='range']::-webkit-slider-thumb {
+        width: 12px;
+        -webkit-appearance: none;
+        height: 10px;
+        background: rgb(71, 71, 71);
+        box-shadow: -100px 0 0 100px orange;
+    }
+}
+
+.active {
+    margin-left: -1.5em;
+}
+
+.side-ico {
+    margin-right: 0.5em;
+}
+
+#selection {
+    margin-top: 3em;
+    text-decoration: none;
+}
+
+.wrapper .sidebar{
+    text-align: left;
+    background: rgb(21, 21, 21);
+    position: fixed;
+    top: 3.3em;
+    left: 0;
+    width: 225px;
+    height: 100%;
+    padding: 20px 0;
+    transition: all 0.5s ease;
+}
+
+.wrapper .sidebar ul li a{
+    display: block;
+    padding: 13px 30px;
+    color: rgb(241, 237, 237);
+    font-size: 16px;
+    position: relative;
+}
+
+.wrapper .sidebar ul li a .icon{
+    color: #dee4ec;
+    width: 30px;
+    display: inline-block;
+}
+
+.wrapper .sidebar ul li a:hover,
+.wrapper .sidebar ul li a.active,
+
+.wrapper .sidebar ul li a:hover .icon,
+.wrapper .sidebar ul li a.active .icon,
+
+.wrapper .sidebar ul li a:hover:before,
+.wrapper .sidebar ul li a.active:before{
+    display: block;
+}
+
+#selection-button {
+    color: orange;
+}
+
+#sidebar-hr {
+    margin: 0.4em;
+    border-top: rgb(75, 75, 75);
+}
+
+.low-page {
+    margin-top: 1.8em;
+    margin-left: 10.5em;
+    margin-right: 0.7em;
+}
+
+#middle-hr {
+    border-top: rgb(75, 75, 75);
+}
+
+h6 {
+    position: absolute;
+    font: 16px Arial, Helvetica, sans-serif;
+    font-family: 'Share Tech', sans-serif;
+    text-transform: none;
+    margin-top: 0.5em;
+    margin-left: 1em;
+}
+
+#low-author {
+    margin-left: 40em;
+}
+
+#low-album {
+    margin-left: 65em;
+}
+
+#low-clock {
+    margin-left: 98em;
+}

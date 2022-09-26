@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html class="rwd">
+<head>
+    <title>Our Selection - MPlay3r</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="header">
+        <h1 id="header">OUR SELECTION</h1>
+        <img id="logo" src="./img/logo.png">
+        <hr id="separation">
+    </header>
+    <div class="wrapper">
+        <div class="sidebar">
+            <ul>
+                <li>
+                    <a href="#" class="active" id="home">
+                        <span><button class="menu-button"><img class="side-ico" src="./img/home.png" alt="home" width="20px"> Home</button></span>
+                    </a>
+                </li> 
+                <li>
+                    <a href="#" class="active" id="search">
+                        <span><button class="menu-button"><img class="side-ico" src="./img/search.png" alt="search" width="20px"> Search</button></span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="active" id="library">
+                        <span><button class="menu-button"><img class="side-ico" src="./img/library.png" alt="library" width="20px"> Library</button></span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="active" id="selection">
+                        <span><button class="menu-button" id="selection-button"><img class="side-ico" src="./img/selection1.png" alt="selection" width="20px"> Our Selection</button></span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="active" id="liked">
+                        <span><button class="menu-button"><img class="side-ico" src="./img/no-like.png" alt="liked" width="20px"> Liked Titles</button></span>
+                    </a>
+                </li>
+            </ul>
+            <hr id="sidebar-hr">
+        </div>
+    </div>
+    <div id="music-player">
+        <img id="img">
+        <div id="music-text">
+            <h1 id="title"></h1>
+            <h2 id="author"></h2>
+            <h3 id="album"></h3>
+        </div>
+        <audio id="player"></audio>
+        <div class="buttons">
+            <button title="Previous" class="button" onclick="onPrev()"><img id="prev-button" src="./img/previous.png" width="30px"></button>
+            <button title="Play" class="button" id="play" onclick="onLecture()"><img id="play-button" src="./img/play.png" width="35px"><img id="pause-button" src="./img/pause.png" width="35px"></button>
+            <button title="Next" class="button" onclick="onNext()"><img id="next-button" src="./img/next.png" width="30px"></button>
+            <button title="Like" class="button" onclick="onLike()"><img id="no-like" src="./img/no-like.png" width="25px"><img id="like" src="./img/like.png" width="25px"></button>
+        </div>
+        <div class = "duration">
+            <p id="currentTime" ></p>
+            <input id="position" type="range" min="0" max="100" onchange="onPosition(this.value)">
+            <p id="durationTime" ></p>
+        </div>
+        <input id="volume" type="range" min="0" max="100" onchange="onVolume(this.value)">
+        <script src="./js/playlist.js"></script>
+        <script src="./js/music-player.js"></script>
+    </div>
+    <div class="low-page">
+        <hr id="middle-hr">
+        <h6 id="low-title">Title</h6>
+        <h6 id="low-author">Author</h6>
+        <h6 id="low-album">Album</h6>
+        <h6 id="low-clock"><img src="./img/clock.png" width="16p" alt="time"></h6>
+    </div>
+</body>
+</html>
